@@ -1,0 +1,82 @@
+body {
+    background: linear-gradient(135deg, #222, #444);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #555;
+    padding: 20px;
+    border-bottom: 3px solid #777;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.gallery {
+    padding: 20px;
+}
+
+.photo-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo-row:nth-child(even) {
+    flex-direction: row-reverse; /* Membalik arah untuk zigzag */
+}
+
+.photo {
+    flex: 1;
+    border: 5px solid #777;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #444;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 300px; /* Ukuran maksimum gambar */
+    margin: 0 15px; /* Jarak antara gambar dan keterangan */
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.caption {
+    margin: 0 15px;
+    color: #ccc;
+    font-size: 18px; /* Ukuran font lebih besar */
+    font-weight: bold;
+    max-width: 200px; /* Lebar maksimum keterangan */
+    text-align: left;
+}
+
+footer {
+    background-color: #555;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #e0e0e0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
